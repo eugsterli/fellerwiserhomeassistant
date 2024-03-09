@@ -189,7 +189,7 @@ class FellerCover(CoverEntity):
             self._is_closing = True
             self._is_opening = False
 
-        if self._position >= 100:
+        if self._position < 1:
             self._is_closed = True
         else:
             self._is_closed = False
@@ -207,7 +207,7 @@ class FellerCover(CoverEntity):
             self._is_closing = True
             self._is_opening = False
 
-        if self._position >= 100:
+        if self._position < 1:
             self._is_closed = True
         else:
             self._is_closed = False
